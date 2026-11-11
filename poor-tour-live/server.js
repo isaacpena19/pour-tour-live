@@ -168,7 +168,13 @@ async function route(req, res) {
   let filename = url.pathname === '/' ? 'index.html' : url.pathname.slice(1);
   if (!['index.html', 'styles.css', 'app.js', 'favicon.svg', 'pour-tour-logo.webp'].includes(filename)) return error(res, 404, 'Not found');
   const file = path.join(__dirname, 'public', filename);
-  const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml' };
+  const types = {
+  '.html': 'text/html; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.js': 'text/javascript; charset=utf-8',
+  '.svg': 'image/svg+xml',
+  '.webp': 'image/webp'
+};
   res.writeHead(200, { 'Content-Type': types[path.extname(file)], 'Cache-Control': 'no-cache', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'; connect-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; frame-ancestors 'none'" });
   if (req.method === 'HEAD') return res.end();
   fs.createReadStream(file).pipe(res);
