@@ -11,3 +11,29 @@
 .score-summary{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding:18px;background:#222c1b;border:1px solid #40522d;border-radius:12px;margin:16px 0}.summary-big{font-size:32px;font-weight:950;color:var(--acid)}.summary-label{font-size:10px;color:#b3c5a8;letter-spacing:.11em;font-weight:800}.summary-block{min-width:100px}.score-entry{border:1px solid #3a4535;border-radius:13px;padding:20px;background:#111610;margin:16px 0}.score-entry h3{margin:0}.score-entry p{color:#a6b4a0;font-size:12px;margin:6px 0 16px}.hole-chips{display:flex;gap:7px;overflow:auto;padding-bottom:9px;margin-bottom:18px}.hole-chip{flex:0 0 auto;border:1px solid #424c3d;border-radius:8px;background:#20271d;padding:11px 13px;font-size:12px;font-weight:900;color:#c5d2bf}.hole-chip.selected{background:var(--acid);border-color:var(--acid);color:#131a0a}.hole-chip.scored:not(.selected){border-color:#86a841;color:var(--acid)}.form-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:14px}.segment-title{font-weight:950;font-size:11px;letter-spacing:.14em;color:var(--acid);margin:22px 0 9px}.score-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.hole-card{border:1px solid #3a4336;border-radius:11px;padding:15px;text-align:left;background:#1b2119;color:#eaf2e5}.hole-card:hover{border-color:#8fae64}.hole-card.selected{outline:2px solid var(--acid)}.hole-top{display:flex;justify-content:space-between;font-size:12px;font-weight:900}.hole-par{color:#b0bcaa;font-size:11px}.hole-strokes{font-size:25px;font-weight:950;margin:8px 0 2px}.hole-to-par{font-size:11px;font-weight:800}.empty{padding:46px 16px!important;text-align:center;color:#b7c59d!important;font-size:14px!important}.card-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:17px}.card-heading h3{margin:0}.tag{font-size:10px;font-weight:900;letter-spacing:.08em;color:var(--acid);background:#29371d;padding:8px 11px;border:1px solid #41502b;border-radius:99px}.field-title{margin-bottom:9px}.pars-grid{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px;margin:8px 0 20px}.par-cell{text-align:center;font-size:10px}.par-cell input{text-align:center;padding:10px 2px}.notice{margin:16px 0 0;border-radius:9px;padding:16px;background:#2a361e;color:#e0ffba;font-weight:750;font-size:13px;line-height:1.6}.admin-team{border-top:1px solid #394135;padding:17px 0}.admin-team-head{display:flex;gap:12px;justify-content:space-between;align-items:center}.admin-team p{margin:5px 0;color:#aab8a5;font-size:12px}.admin-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.admin-controls .btn{padding:10px 12px;font-size:11px}footer{text-align:center;color:#8b9885;letter-spacing:.16em;font-weight:850;font-size:9px;padding:60px 0 30px}footer span{margin:0 12px}#toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,120px);transition:transform .2s;background:#d7ff00;color:#11180b;padding:13px 20px;border-radius:10px;box-shadow:0 6px 25px #0008;max-width:90vw;font-size:13px;font-weight:850;z-index:5}#toast.show{transform:translate(-50%,0)}dialog{border:1px solid #4a5843;border-radius:16px;padding:0;width:min(500px,90vw);background:#1c221b;color:#f7faf3;box-shadow:0 30px 100px #000b}dialog::backdrop{background:#000b}.dialog-inner{padding:24px}.dialog-inner h3{margin-top:0}.dialog-actions{display:flex;justify-content:flex-end;margin-top:16px}code{font-size:18px;letter-spacing:.2em;background:#29391c;color:var(--acid);padding:6px 9px;border-radius:6px}
 @media(max-width:640px){.wrap{width:min(100% - 28px,1160px)}.header-in{min-height:86px}.brand{flex-basis:210px;width:210px;height:78px}.status{font-size:10px;padding:8px 10px}.hero{align-items:flex-start;flex-direction:column;padding:43px 0 25px;gap:20px}.hero:before{top:16px;font-size:8px}.hero h1{font-size:clamp(38px,11vw,64px)}.hero-right{gap:8px}.tab{padding:14px 11px;font-size:12px}.section-head h2{font-size:20px}.leaderboard th,.leaderboard td{padding:15px 11px}.leaderboard td:nth-child(4){font-size:19px}.leaderboard td:nth-child(5),.leaderboard th:nth-child(5){display:none}.team-title{font-size:13px}.team-players{font-size:11px}.card{padding:17px}.pars-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.score-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hole-card{padding:11px}.hole-strokes{font-size:20px}.form-row>label{flex-basis:100%}.legend{gap:8px}.legend span{padding:9px 10px}footer{line-height:2}}
 @media(max-width:370px){.brand{flex-basis:175px;width:175px;height:70px}.status{font-size:9px}.tab{padding-inline:9px}}
+/* POUR TOUR OFFICIAL LOGO */
+
+.brand-logo {
+  width: 180px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.header {
+  background: #050505;
+}
+
+.header-in {
+  min-height: 110px;
+}
+
+@media (max-width: 640px) {
+  .brand-logo {
+    width: 145px;
+  }
+
+  .header-in {
+    min-height: 90px;
+  }
+}
